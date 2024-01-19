@@ -1,7 +1,7 @@
 import 'dart:math';
 
-import 'package:call_application_demo/calcButton.dart';
-import 'package:call_application_demo/homepage.dart';
+import 'package:call_application_demo/screens/calculator/calcButton.dart';
+import 'package:call_application_demo/screens/equations/homepage.dart';
 import 'package:call_application_demo/services/SessionManager.dart';
 import 'package:flutter/material.dart';
 import 'package:math_expressions/math_expressions.dart';
@@ -122,7 +122,7 @@ class _CalculatorViewState extends State<CalculatorView> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Color.fromARGB(255, 70, 75, 95),
+        backgroundColor: Colors.transparent.withOpacity(0.6),
         leading: GestureDetector(
           onTap: () {
             Navigator.push(
@@ -148,7 +148,7 @@ class _CalculatorViewState extends State<CalculatorView> {
       body: Stack(children: [
         Positioned.fill(
           child: Image.asset(
-            'assets/taklumaklu.jpg',
+            'assets/taklumaklu.png',
             fit: BoxFit.fill,
           ),
         ),
